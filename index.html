@@ -1,0 +1,156 @@
+<!doctype>
+<html>
+
+<head>
+    <title>nikiihl's page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js" integrity="sha512-BkBgWiL0N/EFIbLZYGTgbksKG5bS6PtwnWvVk3gccv+KhtK/4wkLxCRGh+kelKiXx7Ey4jfTabLg3AEIPC7ENA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <base href="F:\html\practice\coconutproject\"/>
+   
+    <script>
+        $(document).ready(function () {
+
+            $("#ss").fadeIn(2000);
+            $("#pp").animate({ "left": "100px" }, 500);
+            $("#bb").animate({ "right": "600px" }, 300);
+
+            // sliding function
+            $("#kk").click(function () {
+                $("#11").slideToggle().css({ "margin": "40px","color": "yellow", "font-weight": "bold" });
+
+                $("#22").slideUp();
+                $("#33").slideUp();
+
+            });
+            $("#hh").click(function () {
+                $("#22").slideToggle().css({ "margin": "160px", "color": "yellow", "font-weight": "bold" });
+                $("#11").slideUp();
+                $("#33").slideUp();
+            });
+            $("#gg").click(function () {
+                $("#33").slideToggle().css({ "margin": "480px", "color": "yellow", "font-weight": "bold" });
+                $("#11").slideUp();
+                $("#22").slideUp();
+            });
+            // for button color change
+            $("#kk,#hh,#mm,#gg").focus(function () {
+                $(this).css({ "color": "lawngreen" });
+            })
+            $("#kk,#hh,#mm,#gg").blur(function () {
+                $(this).css({ "color": "brown" });
+            })
+
+        })
+    </script>
+    <style>
+        #pp * {
+            margin-left: 20px;
+
+        }
+
+        a {
+            color: yellow;
+        }
+
+        body {
+            background-image: url("bg1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100%;
+
+
+        }
+    </style>
+
+</head>
+
+<body class="bg-secondary">
+    <div class="d-flex bg-dark justify-content-center p-3">
+        <h1 id="ss" style="display: none;color:lawngreen">welcome to coconut.com</h1>
+    </div>
+    <br>
+    <br>
+    <main class="row">
+        <section class="col-sm-6">
+    <div id="pp" class="nav" style="position:absolute;margin-left:-50px">
+        <input id="kk" type="button" value="Home" class="btn btn-lg bg-primary">
+        <h4></h4></input>
+        <input id="hh" type="button" value="Products" class="btn btn-lg  bg-primary">
+        <h4></h4></input>
+        <a id="mm" href="about us.html"><input type="button" value="About us" id="cc"
+                class="btn btn-lg  bg-primary"></input></a>
+        <input id="gg" type="button" value="contact us" class="btn  btn-lg  bg-primary"></input>
+
+    </div>
+
+
+
+
+    <div id="11" style="display:none">
+        <br>
+        <br>
+        <br>
+        <ul style="list-style: square">
+            <li><a href="coconut benefits.html">
+                    <h4>Benefits of coconut</h4>
+                </a></li>
+            <li><a href="form of customer.html">
+                    <h4>sign in
+                </a></h4>
+            </li>
+
+        </ul>
+
+    </div>
+    <div id="22" style="display:none">
+        <br>
+        <br>
+        <br>
+        <ul style="list-style: square">
+            <li><a href="coconut water.html">
+                    <h4>coconut water</h4>
+                </a></li>
+            <li><a href="coconut for cooking.html">
+                    <h4>coconut for cooking</h4>
+                </a></li>
+            <li><a href="coconut oil for cooking.html">
+                    <h4>coconut oil for cooking</h4>
+                </a></li>
+            <li><a href="cocopit fertiliser.html">
+                    <h4>cocopit fertiliser
+                </a></h4>
+            </li>
+
+        </ul>
+
+    </div>
+    <div id="33" style="display:none;font-weight: bold;" class="container-fluid">
+        <br>
+        <br>
+        <br>
+        <address>
+            
+            <h4>nikhil coconut farm and product;<br>
+                bhigwan;<br>
+                pune-412300.</h4><br>
+        </address>
+
+    </div>
+</section>
+<section class="col-sm-6">
+    <div >
+        <img id="bb" src="C:\Users\Dell\Pictures\Saved Pictures\1.png" style="margin-right:-100px;position:absolute" height="500px" width="500px"/>
+    </div>
+</section>
+    </main>
+        
+
+
+
+</body>
+
+</html>
